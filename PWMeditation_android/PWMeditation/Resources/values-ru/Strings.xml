@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="connect">Подключиться</string>
+	<string name="disconnect">Отключиться</string>
+
+	<string name="account">Аккаунт</string>
+	<string name="add">Добавить</string>
+	<string name="delete">Удалить</string>
+	<string name="edit">Изменить</string>
+	<string name="settings">Настройки</string>
+
+	<string name="connected">Подключен</string>
+	<string name="disconnected">Отключен</string>
+	<string name="connecting">Подключение</string>
+	<string name="relogin">Релогин</string>
+	<string name="meditation">Медитация</string>
+	<string name="in_the_world">В игре</string>
+
+	<string name="level">Уровень</string>
+	<string name="experience">Опыт</string>
+	<string name="today">Сегодня</string>
+	<string name="meditation_high">Глубокая</string>
+	<string name="meditation_low">Обычная</string>
+
+	<string name="days">дн</string>
+	<string name="hours">ч</string>
+	<string name="minutes">мин</string>
+	<string name="seconds">с</string>
+
+	<string name="settings_account_server">Сервер:</string>
+	<string name="settings_account_login">Логин:</string>
+	<string name="settings_account_password">Пароль:</string>
+	<string name="settings_account_role">Персонаж:</string>
+	<string name="settings_account_load">Загрузить</string>
+	<string name="settings_account_automessage">Автоответ:</string>
+	<string name="settings_account_force_auth">Усиленный вход</string>
+	<string name="settings_account_show_online">Показывать онлайн</string>
+	<string name="settings_account_use_automessage">Использовать автоответ</string>
+
+	<string name="settings_server_name">Имя:</string>
+	<string name="settings_server_address">Адрес:</string>
+
+	<string name="save">Сохранить</string>
+	<string name="cancel">Отменить</string>
+	<string name="ok">OK</string>
+
+	<string name="default_automessage">Медитирую^_^</string>
+
+	<string name="app_name">PWMeditation</string>
+</resources>

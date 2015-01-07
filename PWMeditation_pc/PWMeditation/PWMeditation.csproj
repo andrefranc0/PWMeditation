@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{028EF77B-003E-4CD5-924B-D5FB813B94DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PWMeditation</RootNamespace>
+    <AssemblyName>PWMeditation</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoDB">
+      <HintPath>..\MonoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeditationLogic.cs" />
+    <Compile Include="OOGLibrary\Cryptography\EncDec.cs" />
+    <Compile Include="OOGLibrary\Cryptography\MD5Hash.cs" />
+    <Compile Include="OOGLibrary\Cryptography\RC4.cs" />
+    <Compile Include="OOGLibrary\Cryptography\Unpack.cs" />
+    <Compile Include="OOGLibrary\GameTypes\CoreVersion.cs" />
+    <Compile Include="OOGLibrary\GameTypes\Point3F.cs" />
+    <Compile Include="OOGLibrary\GameTypes\UnixTime.cs" />
+    <Compile Include="OOGLibrary\IO\DataSerializer.cs" />
+    <Compile Include="OOGLibrary\IO\DataStream.cs" />
+    <Compile Include="OOGLibrary\IO\DataStreamCreate.cs" />
+    <Compile Include="OOGLibrary\IO\DataStreamHandler.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\CMKey.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\Container.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\EnterWorld.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\GetFriendList.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\GetInventory.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\KeepAlive.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\LogginAnnounce.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\MeditationSet.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\PrivateMessage.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\RoleList.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Client\SelectRole.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\Container.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\ErrorInfo.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\InventoryInfo.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\LastOnline.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\MeditationEnabled.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\MeditationInfo.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\MoneyInfo.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\OnlineAnnounce.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\PrivateMessage.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\RoleInfoUpdate.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\RoleList_Re.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\SelectRole_Re.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\ServerInfo.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Server\SMKey.cs" />
+    <Compile Include="OOGLibrary\IO\PacketBase\Structures.cs" />
+    <Compile Include="OOGLibrary\Network\Client.cs" />
+    <Compile Include="OOGLibrary\Network\GameServer.cs" />
+    <Compile Include="OOGLibrary\Network\Templates\AutoMessage.cs" />
+    <Compile Include="OOGLibrary\Network\Templates\Events.cs" />
+    <Compile Include="OOGLibrary\Network\Templates\KeepAliveSender.cs" />
+    <Compile Include="OOGLibrary\Network\Templates\Meditation.cs" />
+    <Compile Include="OOGLibrary\Network\Templates\OOGAccountHost.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

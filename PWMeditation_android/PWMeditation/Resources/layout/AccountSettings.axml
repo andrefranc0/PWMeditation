@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="@+string/settings_account_server"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="44.7dp"
+        android:id="@+id/spinSelectedServer" />
+    <TextView
+        android:text="@+string/settings_account_login"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLogin" />
+    <TextView
+        android:text="@+string/settings_account_password"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword" />
+    <TextView
+        android:text="@+string/settings_account_role"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="43.4dp"
+        android:id="@+id/linearLayout1">
+        <Spinner
+            android:id="@+id/spinSelectedRole"
+            android:layout_width="208.0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="@+string/settings_account_load"
+            android:layout_width="110.7dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bLoadRoles" />
+    </LinearLayout>
+    <TextView
+        android:text="@+string/settings_account_automessage"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAutoMessage" />
+    <CheckBox
+        android:text="@+string/settings_account_force_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbForce" />
+    <CheckBox
+        android:text="@+string/settings_account_show_online"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbShowOnline" />
+    <CheckBox
+        android:text="@+string/settings_account_use_automessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbAutoMessage" />
+    <Button
+        android:text="@+string/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSave" />
+</LinearLayout>

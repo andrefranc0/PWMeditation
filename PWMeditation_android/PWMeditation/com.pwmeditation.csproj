@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{D5153EC9-8BAD-4878-9AB5-AC90E418D4C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PWMeditation</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>com.pwmeditation</AssemblyName>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiviliaFramework\Data\AccountInformation.cs" />
+    <Compile Include="SiviliaFramework\Data\ConnectionData.cs" />
+    <Compile Include="SiviliaFramework\Data\ConnectionStatus.cs" />
+    <Compile Include="SiviliaFramework\Data\MeditationInformation.cs" />
+    <Compile Include="SiviliaFramework\Data\WorldRoleList.cs" />
+    <Compile Include="SiviliaFramework\Data\DataTypes\OtherRoleMainData.cs" />
+    <Compile Include="SiviliaFramework\Data\DataTypes\RoleStatsInformation.cs" />
+    <Compile Include="SiviliaFramework\Data\DataTypes\StyleInfo.cs" />
+    <Compile Include="SiviliaFramework\IO\DataStream.cs" />
+    <Compile Include="SiviliaFramework\IO\DataStreamSerializer.cs" />
+    <Compile Include="SiviliaFramework\IO\FieldType.cs" />
+    <Compile Include="SiviliaFramework\IO\GamePacket.cs" />
+    <Compile Include="SiviliaFramework\IO\PacketIdentifier.cs" />
+    <Compile Include="SiviliaFramework\IO\PacketsRegistry.cs" />
+    <Compile Include="SiviliaFramework\IO\PacketType.cs" />
+    <Compile Include="SiviliaFramework\IO\Serializable.cs" />
+    <Compile Include="SiviliaFramework\IO\Attributes\ARRAY.cs" />
+    <Compile Include="SiviliaFramework\IO\Attributes\FIELD.cs" />
+    <Compile Include="SiviliaFramework\IO\Attributes\IF.cs" />
+    <Compile Include="SiviliaFramework\IO\Attributes\SKIP.cs" />
+    <Compile Include="SiviliaFramework\IO\Attributes\SWAP.cs" />
+    <Compile Include="SiviliaFramework\IO\GameTypes\Gender.cs" />
+    <Compile Include="SiviliaFramework\IO\GameTypes\GuildStatus.cs" />
+    <Compile Include="SiviliaFramework\IO\GameTypes\Occupation.cs" />
+    <Compile Include="SiviliaFramework\IO\GameTypes\Point3F.cs" />
+    <Compile Include="SiviliaFramework\IO\GameTypes\UnixTime.cs" />
+    <Compile Include="SiviliaFramework\Network\Connection.cs" />
+    <Compile Include="SiviliaFramework\Network\GameServer.cs" />
+    <Compile Include="SiviliaFramework\Network\OOGHost.cs" />
+    <Compile Include="SiviliaFramework\Network\PacketHandler.cs" />
+    <Compile Include="SiviliaFramework\Network\PluginManager.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\CMKeyC02.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\CreateRoleC54.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\EnterWorldC48.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\GetFriendListCCE.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\GetInventoryC27.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\KeepAliveC5A.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\LogginAnnounceC03.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\RoleListC52.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\SelectRoleC46.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\AccountBlockedS7B.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\CreateRole_ReS55.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\KeepAliveS5A.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\LastLoginInfoS8F.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\OnlineAnnounceS04.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\PlayerPositionS08.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\PrivateMessageS60.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\RoleInfoUpdateS26.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\RoleList_ReS53.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\RoleLogoutS45.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\RoleStatsInfoS32.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\SelectRole_ReS47.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\ServerInfoS01.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\SMKeyS02.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\WorldMessageS85.cs" />
+    <Compile Include="SiviliaFramework\Network\Plugins\AuthPlugin.cs" />
+    <Compile Include="SiviliaFramework\Network\Plugins\EmuPlugin.cs" />
+    <Compile Include="SiviliaFramework\Network\Plugins\KeepAlivePlugin.cs" />
+    <Compile Include="SiviliaFramework\Network\Plugins\ReloginPlugin.cs" />
+    <Compile Include="SiviliaFramework\Network\Security\EncDec.cs" />
+    <Compile Include="SiviliaFramework\Network\Security\MD5Hash.cs" />
+    <Compile Include="SiviliaFramework\Network\Security\MppcUnpacker.cs" />
+    <Compile Include="SiviliaFramework\Network\Security\RC4.cs" />
+    <Compile Include="SiviliaFramework\Network\Security\Unpack.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="SiviliaFramework\Network\Plugins\MeditationPlugin.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\PrivateMessageC60.cs" />
+    <Compile Include="ServerList.cs" />
+    <Compile Include="ServersSettingsActivity.cs" />
+    <Compile Include="AccountSettingsActivity.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\MeditationInfoS149.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Server\MeditationEnabledS14A.cs" />
+    <Compile Include="SiviliaFramework\Network\Packets\Client\MeditationSetC86.cs" />
+    <Compile Include="MainActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\ServerSettings.axml" />
+    <AndroidResource Include="Resources\layout\AccountSettings.axml" />
+    <AndroidResource Include="Resources\values-ru\Strings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="SiviliaFramework\" />
+    <Folder Include="Resources\values-ru\" />
+  </ItemGroup>
+</Project>

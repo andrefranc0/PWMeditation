@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <Spinner
+        p1:layout_width="match_parent"
+        p1:layout_height="38.9dp"
+        p1:id="@+id/spinAccounts" />
+    <TextView
+        p1:text="Отключен"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvMeditationStatus"
+        p1:layout_marginLeft="10dp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/pbExperience"
+        p1:layout_marginRight="10dp"
+        p1:layout_marginLeft="10dp" />
+    <TextView
+        p1:text="Уровень: 0"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvLevel"
+        p1:layout_marginLeft="10dp" />
+    <TextView
+        p1:text="Опыт: 0/0 (0%)"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvExperience"
+        p1:layout_marginLeft="10dp" />
+    <TextView
+        p1:text="Сегодня: 0 минут"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvMeditationToday"
+        p1:layout_marginLeft="10dp" />
+    <TextView
+        p1:text="Глубокая: 0 минут"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvMeditationHigh"
+        p1:layout_marginLeft="10dp" />
+    <TextView
+        p1:text="Обычная: 0 минут"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tvMeditationLow"
+        p1:layout_marginLeft="10dp" />
+</LinearLayout>

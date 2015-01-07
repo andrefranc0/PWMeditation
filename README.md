@@ -1,2 +1,2 @@
 # PWMeditation
-client-less meditation bot for Perfect World
+Client-less meditation bot for Perfect World
